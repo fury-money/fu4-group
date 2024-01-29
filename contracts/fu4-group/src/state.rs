@@ -1,6 +1,8 @@
-use cosmwasm_std::{Addr, ReadonlyStorage, StdResult, Storage, Snapshot};
+use cosmwasm_std::{Addr, StdResult};
 use cw_controllers::{Admin, Hooks};
-use cw_storage_plus::{Item, Bucket, Map, Strategy};
+use cosmwasm_storage::{Bucket, Item};
+use cosmwasm_storage::{MemoryStorage, ReadonlyStorage, ReadonlyStorageObject, Storage, StorageObject};
+
 
 use tg4::{MemberInfo, TOTAL_KEY};
 
